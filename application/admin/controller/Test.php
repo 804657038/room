@@ -3,7 +3,7 @@
 namespace app\admin\controller;
 
 use think\Request;
-use app\admin\model\TestModel;
+use app\admin\model\Test;
 /**
  * @title 测试功能
  * @description ...
@@ -19,7 +19,7 @@ class Test extends Paren
      * @param name:title type:string require:1 default: other: desc:标题
      * @return data:返回信息
      */
-    public function addtest(Request $request,TestModel $model){
+    public function addtest(Request $request,Test $model){
 
 //        self::adminAutho('test_add'); //权限验证，先注释
         $param=$request->param();
